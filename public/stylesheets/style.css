@@ -1,8 +1,72 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* generalities */
+.container-1th {
+
 }
 
-a {
-  color: #00B7FF;
+.img-background {
+    position: relative;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.img-background::before {
+    background: url("../images/Wallpaper_2.jpg") no-repeat center center;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+.container-1th > .content {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.container-1th > .content .title {
+    margin: 20px 50px;
+    opacity: 0.6;
+}
+
+.container-1th > .content h1 {
+    color: white;
+}
+
+.services-container {
+    width: 100%;
+    display: flex;
+}
+
+.service {
+    margin: 25px 25px;
+    opacity: 0.8;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.content-body {
+    /*display: flex;*/
+}
+
+.main-introduction {
+    margin: 50px 75px;
+    color: ghostwhite;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.main-introduction p {
+    font-size: 1.5em;
 }
